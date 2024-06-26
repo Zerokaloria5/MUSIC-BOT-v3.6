@@ -29,8 +29,8 @@ module.exports = {
 
   run: async (client, interaction) => {
     try {
-      const youtubeLink = 'https://discord.gg/s2bvv7tMaz';
-      const InstagramLink = 'https://www.youtube.com/@edwardo5422/videos';
+      const youtubeLink = 'https://www.youtube.com/@edwardo5422/videos';
+      const InstagramLink = 'https://discord.gg/s2bvv7tMaz';
       const { EmbedBuilder } = require('discord.js')
         const embed = new EmbedBuilder()
             .setColor('#000000')
@@ -39,7 +39,7 @@ module.exports = {
           iconURL: 'https://cdn.discordapp.com/attachments/1048361437464121474/1255307766847766609/CuauFBt.png?ex=667d50b6&is=667bff36&hm=d6b34d859089cd900f404bee459b2c10c264b8e90e154eff602c57c393281a46&',
           url: 'https://discord.gg/s2bvv7tMaz'
         })
-            .setDescription(`__**About me**__:\n\n Edwardo\n YouTube : ❤️ [FurYx](${youtubeLink})\n Instagram : 💙 [FurYx](${InstagramLink})`)
+            .setDescription(`__**About me**__:\n\n Edwardo\n YouTube : ❤️ [FurYx](${youtubeLink})\n Discord : 💙 [FurYx](${InstagramLink})`)
             .setTimestamp();
       interaction.reply({ embeds: [embed] }).catch(e => {});
 
