@@ -63,7 +63,7 @@ module.exports = {
             if (!music_filter?.length > 0) return interaction.reply({ content: `No music with Name`, ephemeral: true }).catch(e => { })
                 const listembed = new EmbedBuilder()
                 .setTitle('Loading Your Album')
-                .setColor('#FF0000')
+                .setColor('#000000')
                 .setDescription('**🎸 Get ready for a musical journey!**');
             interaction.reply({ content : '', embeds: [listembed] }).catch(e => { })
 
@@ -80,9 +80,9 @@ module.exports = {
         .setAuthor({
         name: 'Added Album Songs to Queue',
         iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157218651179597884/1213-verified.gif', 
-        url: 'https://discord.gg/FUEHs7RCqz'
+        url: 'https://www.youtube.com/watch?v=Z_Tg9VPp1TY'
     })
-        .setColor('#14bdff')
+        .setColor('#000000')
         .setFooter({ text: 'Use /queue for more Information' });
            
               await interaction.editReply({ content: '',embeds: [qembed] }).catch(e => {
