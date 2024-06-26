@@ -24,6 +24,7 @@ module.exports = {
       try {
         res = await client.player.search(name, {
           member: interaction.member,
+          deaf: false,
           textChannel: interaction.channel,
           interaction
         });
