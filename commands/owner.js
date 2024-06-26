@@ -37,7 +37,7 @@ module.exports = {
             .setAuthor({
           name: 'Owner',
           iconURL: 'https://cdn.discordapp.com/attachments/1048361437464121474/1255307766847766609/CuauFBt.png?ex=667d50b6&is=667bff36&hm=d6b34d859089cd900f404bee459b2c10c264b8e90e154eff602c57c393281a46&',
-          url: 'https://discord.gg/s2bvv7tMaz'
+          url: '<https://discord.com/users/566725782634758152>'
         })
             .setDescription(`__**About me**__:\n\n Edwardo\n YouTube : ❤️ [FurYx](${youtubeLink})\n Discord : 💙 [FurYx](${InstagramLink})`)
             .setTimestamp();
