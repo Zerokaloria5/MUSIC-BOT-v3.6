@@ -24,7 +24,7 @@ const db = require("../mongoDB");
 module.exports = async (client, oldState, newState) => {
 const queue = client.player.getQueue(oldState.guild.id);
 if(queue || queue?.playing){
-if(client?.config?.opt?.voiceConfig?.leaveOnEmpty?.status === true){
+if(client?.config?.opt?.voiceConfig?.leaveOnEmpty?.status === false){
 
 setTimeout(async() => {
 let botChannel = oldState?.guild?.channels?.cache?.get(queue?.voice?.connection?.joinConfig?.channelId)
