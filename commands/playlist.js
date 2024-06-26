@@ -188,7 +188,7 @@ await interaction.editReply({
         }
 
        const deletingAlbumEmbed = new EmbedBuilder()
-          .setColor('#0099ff')
+          .setColor('#000000')
           .setTitle('Deleting Album')
           .setDescription(`Hey <@${interaction.member.id}>, your album is being Deleted 🎸`)
           .setTimestamp();
@@ -210,7 +210,7 @@ await interaction.editReply({
         }, { upsert: true }).catch(e => { })
 
          const albumDeleteEmbed = new EmbedBuilder()
-  .setColor('#00ff00')
+  .setColor('#000000')
           .setAuthor({
             name: 'Album Deleted Sucessfully',
             iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1215554404527116288/7762-verified-blue.gif',
@@ -251,7 +251,7 @@ await interaction.editReply({
         }
         if (!res || !res.length || !res.length > 1) return interaction.reply({ content: `Cannot Find ❌ `, ephemeral: true }).catch(e => { })
         const loadingembed = new EmbedBuilder()
-        .setColor('#0099ff')
+        .setColor('000000')
        .setAuthor({
           name: 'Song Added to Your Album',
           iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213430944007061574/6943_Verified.gif',
@@ -297,7 +297,7 @@ await interaction.editReply({
         if (!music_filter?.length > 0) return interaction.reply({ content: `❌ No Song found!`, ephemeral: true }).catch(e => { })
 
          const deletingSongEmbed = new EmbedBuilder()
-          .setColor('#0099ff')
+          .setColor('#000000')
           .setTitle('Removing Song')
           .setDescription(`Hey <@${interaction.member.id}>, your Song is being Removed!`)
           .setTimestamp();
