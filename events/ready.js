@@ -47,7 +47,7 @@ setInterval(() => client.user.setActivity({
   name: `FurYxHosted.gg`, 
   type: ActivityType.Listening }), 10000);
 
-  {client.errorLog = config.errorLog
+client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
 }
