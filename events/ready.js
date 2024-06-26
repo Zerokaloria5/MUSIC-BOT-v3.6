@@ -42,13 +42,11 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 })();
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`);
-}};
 
 client.user.setActivity({
   name: 'FurYxHosted.gg',
   type: ActivityType.Streaming,
-  url: 'https://www.youtube.com/watch?v=Z_Tg9VPp1TY',
-)};
+  url: 'https://www.youtube.com/watch?v=Z_Tg9VPp1TY')};
 
   {client.errorLog = config.errorLog
 } else {
