@@ -138,7 +138,7 @@ module.exports = {
   }
 
   const embed = new EmbedBuilder()
-    .setColor('#FF0000')
+    .setColor('#000000')
     .setDescription('**🎸 Get ready for a musical journey!**');
 
   await interaction.reply({ embeds: [embed] }).catch(e => {});
@@ -151,7 +151,7 @@ module.exports = {
     });
   } catch (e) {
     const errorEmbed = new EmbedBuilder()
-      .setColor('#FF0000')
+      .setColor('#000000')
       .setDescription('❌ No results found!!');
 
     await interaction.editReply({ embeds: [errorEmbed], ephemeral: true }).catch(e => {});
